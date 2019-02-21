@@ -1,0 +1,10 @@
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Excercise\wk3Excercise\obj\Debug\wk3Excercise.csprojAssemblyReference.cache
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Excercise\wk3Excercise\obj\Debug\wk3Excercise.Form1.resources
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Excercise\wk3Excercise\obj\Debug\wk3Excercise.Properties.Resources.resources
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Excercise\wk3Excercise\obj\Debug\wk3Excercise.csproj.GenerateResource.cache
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Excercise\wk3Excercise\obj\Debug\wk3Excercise.csproj.CoreCompileInputs.cache
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Excercise\wk3Excercise\bin\Debug\wk3Excercise.exe.config
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Excercise\wk3Excercise\bin\Debug\wk3Excercise.exe
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Excercise\wk3Excercise\bin\Debug\wk3Excercise.pdb
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Excercise\wk3Excercise\obj\Debug\wk3Excercise.exe
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Excercise\wk3Excercise\obj\Debug\wk3Excercise.pdb

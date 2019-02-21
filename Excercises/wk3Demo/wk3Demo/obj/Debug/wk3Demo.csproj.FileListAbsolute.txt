@@ -1,0 +1,10 @@
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Demo\wk3Demo\bin\Debug\wk3Demo.exe.config
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Demo\wk3Demo\bin\Debug\wk3Demo.exe
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Demo\wk3Demo\bin\Debug\wk3Demo.pdb
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Demo\wk3Demo\obj\Debug\wk3Demo.csprojAssemblyReference.cache
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Demo\wk3Demo\obj\Debug\wk3Demo.Form1.resources
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Demo\wk3Demo\obj\Debug\wk3Demo.Properties.Resources.resources
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Demo\wk3Demo\obj\Debug\wk3Demo.csproj.GenerateResource.cache
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Demo\wk3Demo\obj\Debug\wk3Demo.csproj.CoreCompileInputs.cache
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Demo\wk3Demo\obj\Debug\wk3Demo.exe
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk3Demo\wk3Demo\obj\Debug\wk3Demo.pdb

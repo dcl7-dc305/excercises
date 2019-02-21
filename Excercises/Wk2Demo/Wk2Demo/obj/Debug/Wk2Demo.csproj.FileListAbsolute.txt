@@ -1,0 +1,13 @@
+C:\Users\Jap\Desktop\DC305 Files\Wk2Demo\Wk2Demo\bin\Debug\Wk2Demo.exe.config
+C:\Users\Jap\Desktop\DC305 Files\Wk2Demo\Wk2Demo\bin\Debug\Wk2Demo.exe
+C:\Users\Jap\Desktop\DC305 Files\Wk2Demo\Wk2Demo\bin\Debug\Wk2Demo.pdb
+C:\Users\Jap\Desktop\DC305 Files\Wk2Demo\Wk2Demo\obj\Debug\Wk2Demo.csprojAssemblyReference.cache
+C:\Users\Jap\Desktop\DC305 Files\Wk2Demo\Wk2Demo\obj\Debug\Wk2Demo.Properties.Resources.resources
+C:\Users\Jap\Desktop\DC305 Files\Wk2Demo\Wk2Demo\obj\Debug\Wk2Demo.csproj.GenerateResource.cache
+C:\Users\Jap\Desktop\DC305 Files\Wk2Demo\Wk2Demo\obj\Debug\Wk2Demo.csproj.CoreCompileInputs.cache
+C:\Users\Jap\Desktop\DC305 Files\Wk2Demo\Wk2Demo\obj\Debug\Wk2Demo.exe
+C:\Users\Jap\Desktop\DC305 Files\Wk2Demo\Wk2Demo\obj\Debug\Wk2Demo.pdb
+C:\Users\Jap\Desktop\DC305 Files\Wk2Demo\Wk2Demo\obj\Debug\Wk2Demo.frmWelcome.resources
+C:\Users\Jap\Desktop\DC305 Files\Wk2Demo\Wk2Demo\obj\Debug\Wk2Demo.frmLogin.resources
+C:\Users\Jap\Desktop\DC305 Files\Wk2Demo\Wk2Demo\obj\Debug\Wk2Demo.ChangeColor.resources
+C:\Users\Jap\Desktop\DC305 Files\Wk2Demo\Wk2Demo\obj\Debug\Wk2Demo.simpleCalc.resources
