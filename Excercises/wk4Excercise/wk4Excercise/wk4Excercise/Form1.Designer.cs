@@ -43,6 +43,10 @@
             this.dtReg = new System.Windows.Forms.DataGridView();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.txtStudentId = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtReg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +76,6 @@
             this.label3.Size = new System.Drawing.Size(26, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "Age";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -151,10 +154,11 @@
             this.dtReg.Name = "dtReg";
             this.dtReg.Size = new System.Drawing.Size(455, 282);
             this.dtReg.TabIndex = 7;
+            this.dtReg.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtReg_CellContentClick);
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(41, 270);
+            this.btnRegister.Location = new System.Drawing.Point(12, 270);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(75, 23);
             this.btnRegister.TabIndex = 8;
@@ -172,11 +176,51 @@
             this.btnView.UseVisualStyleBackColor = true;
             this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(93, 271);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 10;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // txtStudentId
+            // 
+            this.txtStudentId.Location = new System.Drawing.Point(116, 39);
+            this.txtStudentId.Name = "txtStudentId";
+            this.txtStudentId.Size = new System.Drawing.Size(130, 20);
+            this.txtStudentId.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(37, 42);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 13);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Student ID";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(174, 271);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 13;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 349);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.txtStudentId);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnView);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.dtReg);
@@ -194,7 +238,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtReg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -218,6 +261,10 @@
         private System.Windows.Forms.DataGridView dtReg;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnView;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.TextBox txtStudentId;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 

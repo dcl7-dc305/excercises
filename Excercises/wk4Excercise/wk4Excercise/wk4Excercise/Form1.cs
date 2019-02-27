@@ -16,22 +16,13 @@ namespace wk4Excercise
     {
         SqlConnection conn;
         SqlCommand cmd;
+        SqlCommand checkercmd;
         string ConnStr = ConfigurationManager.ConnectionStrings["myRegister"].ConnectionString;
 
         public Form1()
         {
             InitializeComponent();
             Load_GridRegisterDetails();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -43,7 +34,8 @@ namespace wk4Excercise
             else
             {
                 conn = new SqlConnection(ConnStr);
-                cmd = new SqlCommand("INSERT into register (email, username, password, firstname, lastname, age) VALUES (@email, @username, @password, @firstname, @lastname, @age)", conn);
+                cmd = new SqlCommand("INSERT into register (student_id, email, username, password, firstname, lastname, age) VALUES (@student_id, @email, @username, @password, @firstname, @lastname, @age)", conn);
+                cmd.Parameters.AddWithValue("@student_id", txtStudentId.Text);
                 cmd.Parameters.AddWithValue("@email", txtEmail.Text);
                 cmd.Parameters.AddWithValue("@username", txtUsername.Text);
                 cmd.Parameters.AddWithValue("@password", txtPassword.Text);
@@ -51,17 +43,34 @@ namespace wk4Excercise
                 cmd.Parameters.AddWithValue("@lastname", txtLastName.Text);
                 cmd.Parameters.AddWithValue("@age", txtAge.Text);
 
+                checkercmd = new SqlCommand("SELECT * from register WHERE student_id=@student_id", conn);
+                checkercmd.Parameters.AddWithValue("@student_id", txtStudentId.Text);
+
+
                 try
                 {
+                    SqlDataReader reader; // create reader object
+                    
                     conn.Open();
-                    if (cmd.ExecuteNonQuery() == 1)
+                    reader = checkercmd.ExecuteReader();
+                    if (reader.HasRows) // Check if there's existing record don't enter data
                     {
-                        // If successful query
-                        //lblStatus.ForeColor = System.Drawing.Color.Green;
-                        //lblStatus.Text = "Succesfully Added";
-                        MessageBox.Show("User Successfully added!");
+                        MessageBox.Show("Error Existing Record: " + txtStudentId.Text);
+                        reader.Close();
+                    }
+                    else
+                    {
+                        reader.Close();
+                        if (cmd.ExecuteNonQuery() == 1)
+                        {
+                            // If successful query
+                            //lblStatus.ForeColor = System.Drawing.Color.Green;
+                            //lblStatus.Text = "Succesfully Added";
+                            MessageBox.Show("User Successfully added!");
+                        }
                     }
                     conn.Close();
+                    Load_GridRegisterDetails();
                 }
                 catch (Exception ex)
                 {
@@ -96,6 +105,77 @@ namespace wk4Excercise
                 {
                     MessageBox.Show("No data to show");
                 }
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            conn = new SqlConnection(ConnStr);
+            cmd = new SqlCommand("UPDATE register SET email=@email, username=@username, password=@password, firstname=@firstname, lastname=@lastname, age=@age WHERE student_id=@student_id", conn);
+            cmd.Parameters.AddWithValue("@student_id", txtStudentId.Text);
+            cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+            cmd.Parameters.AddWithValue("@username", txtUsername.Text);
+            cmd.Parameters.AddWithValue("@password", txtPassword.Text);
+            cmd.Parameters.AddWithValue("@firstname", txtFirstName.Text);
+            cmd.Parameters.AddWithValue("@lastname", txtLastName.Text);
+            cmd.Parameters.AddWithValue("@age", txtAge.Text);
+
+            try
+            {
+                conn.Open();
+                if (cmd.ExecuteNonQuery() == 1)
+                    MessageBox.Show("Success");
+                    Load_GridRegisterDetails();
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dtReg_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = dtReg.Rows[e.RowIndex];
+
+            // Insert to Textboxes from Table
+            txtStudentId.Text = row.Cells["student_id"].Value.ToString();
+            txtUsername.Text = row.Cells["username"].Value.ToString();
+            txtPassword.Text = row.Cells["password"].Value.ToString();
+            txtEmail.Text = row.Cells["email"].Value.ToString();
+            txtFirstName.Text = row.Cells["firstname"].Value.ToString();
+            txtLastName.Text = row.Cells["lastname"].Value.ToString();
+            txtAge.Text = row.Cells["age"].Value.ToString();
+            txtStudentId.Enabled = false;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            conn = new SqlConnection(ConnStr);
+            cmd = new SqlCommand("DELETE FROM register WHERE student_id=@student_id", conn);
+            cmd.Parameters.AddWithValue("@student_id", txtStudentId.Text);
+
+            try
+            {
+                conn.Open();
+
+                if (cmd.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Delete Successfully");
+                    Load_GridRegisterDetails();
+                    txtStudentId.Text = "";
+                    txtEmail.Text = "";
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
+                    txtStudentId.Enabled = true;
+                }
+
                 conn.Close();
             }
             catch (Exception ex)
