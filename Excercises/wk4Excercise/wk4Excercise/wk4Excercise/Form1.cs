@@ -183,5 +183,43 @@ namespace wk4Excercise
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void txtAge_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if(!Char.IsDigit(ch) && ch !=8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtStudentId_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtStudentId.Text))
+            {
+                e.Cancel = true;
+                txtStudentId.Focus();
+                errorProvider1.SetError(txtStudentId, "Please enter your Student ID");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtStudentId, "");
+            }
+        }
+
+        private void txtPassword_Validating(object sender, CancelEventArgs e)
+        {
+            try
+            {
+                int x = Int32.Parse(txtPassword.Text);
+                txtPassword.Focus();
+                epPassword.SetError(txtPassword, "");
+            }
+            catch (Exception ex)
+            {
+                epPassword.SetError(txtPassword, "Not an Integer Value");
+            }
+        }
     }
 }

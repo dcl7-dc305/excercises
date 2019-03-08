@@ -8,3 +8,6 @@ C:\Users\Jap\Desktop\DC305 Files\Excercises\wk4Excercise\wk4Excercise\wk4Excerci
 C:\Users\Jap\Desktop\DC305 Files\Excercises\wk4Excercise\wk4Excercise\wk4Excercise\obj\Debug\wk4Excercise.exe
 C:\Users\Jap\Desktop\DC305 Files\Excercises\wk4Excercise\wk4Excercise\wk4Excercise\obj\Debug\wk4Excercise.pdb
 C:\Users\Jap\Desktop\DC305 Files\Excercises\wk4Excercise\wk4Excercise\wk4Excercise\obj\Debug\wk4Excercise.Form1.resources
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk4Excercise\wk4Excercise\wk4Excercise\obj\Debug\wk4Excercise.Form2.resources
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk4Excercise\wk4Excercise\wk4Excercise\obj\Debug\wk4Excercise.Login.resources
+C:\Users\Jap\Desktop\DC305 Files\Excercises\wk4Excercise\wk4Excercise\wk4Excercise\obj\Debug\wk4Excercise.Main.resources
